@@ -15,17 +15,38 @@ body {
   background-size: cover;
   /* background-size: cover; */
 }
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+}
 .team-logos-container {
   margin: 0;
-  padding: 15vh calc(50vw - 35vh);
+  padding: 15vh calc(50vw - 32.5vh);
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
 }
 .team-logos {
-  max-width: 70vh;
-  max-height: 70vh;
-  width: 70vh;
-  height: 70vh;
+  max-width: 65vh;
+  max-height: 65vh;
+  width: 65vh;
+  height: 65vh;
   overflow: hidden;
   background-color: #000;
+}
+
+.team-info {
+  margin-top: -30px;
+  padding: 30px 10px 10px 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  min-height: 50px;
+}
+.tbl {
+  width: 100%;
+  font-weight: 900;
 }

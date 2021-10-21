@@ -5,3 +5,8 @@ button {
   padding: 5px 8px;
   margin: 6px;
 }
+.tbl {
+  width: 100%;
+  font-weight: 900;
+  text-align: center;
+}

@@ -52,6 +52,40 @@ window.onload = function () {
       socket.connect();
     }
   });
+  // SND
+  var snd_w = document.getElementById('snd-w');
+  var snd_l = document.getElementById('snd-l');
+  snd_w.addEventListener('click', (e) => {
+    socket.emit('update_snd', 'W');
+  });
+  snd_l.addEventListener('click', (e) => {
+    socket.emit('update_snd', 'L');
+  });
+
+  // HP
+  var hp_w = document.getElementById('hp-w');
+  var hp_l = document.getElementById('hp-l');
+  hp_w.addEventListener('click', (e) => {
+    socket.emit('update_hp', 'W');
+  });
+  hp_l.addEventListener('click', (e) => {
+    socket.emit('update_hp', 'L');
+  });
+
+  // DMI
+  var dmi_w = document.getElementById('dmi-w');
+  var dmi_l = document.getElementById('dmi-l');
+  dmi_w.addEventListener('click', (e) => {
+    socket.emit('update_dmi', 'W');
+  });
+  dmi_l.addEventListener('click', (e) => {
+    socket.emit('update_dmi', 'L');
+  });
+
+  var rst = document.getElementById('rst');
+  rst.addEventListener('click', (e) => {
+    socket.emit('reset_scores', '--');
+  });
 };
 
 function btn_clicked(e) {
