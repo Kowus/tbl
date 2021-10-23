@@ -8,12 +8,8 @@ const teams = [
     image: 'asg.jpeg',
   },
   {
-    name: 'Camping Noobs',
-    image: 'camping.png',
-  },
-  {
-    name: 'Deadeye',
-    image: 'deadeye.jpg',
+    name: 'DBC',
+    image: 'DBC.png',
   },
   {
     name: 'Prototype',
